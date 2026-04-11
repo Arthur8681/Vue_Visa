@@ -7,7 +7,7 @@
     <div class="country-container">
         <div class="country-selector">
             <a class="image-link" href="UK.html">
-                <!-- <img class="country-image" src="pictures/London.webp" alt="London pic"> -->
+                <img class="country-image" src="/images/London.webp" alt="London pic">
                 <div class="country-name-container">
                     <p class="country-name">
                         United Kingdom
@@ -18,7 +18,7 @@
         </div>
         <div class="country-selector">
             <a class="image-link" href="USA.html">
-                <!-- <img class="country-image" src="pictures/NYC.webp" alt="London pic"> -->
+                <img class="country-image" src="/images/NYC.webp" alt="NYC pic">
                 <div class="country-name-container">
                     <p class="country-name">
                         United States
@@ -29,7 +29,7 @@
         </div>
         <div class="country-selector">
             <a class="image-link" href="Canada.html">
-                <!-- <img class="country-image" src="pictures/Quebec.webp" alt="London pic"> -->
+                <img class="country-image" src="/images/Quebec.webp" alt="Quebec pic">
                 <div class="country-name-container">
                     <p class="country-name">
                         Canada
