@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-<div>
+<div id="maindiv">
     <nav>
       <router-link to="/">Main</router-link> |
     </nav>
@@ -11,5 +11,10 @@
 </template>
 
 <style scoped>
+#maindiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 </style>
