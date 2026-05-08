@@ -23,7 +23,7 @@
         </button>
     </div>
 
-    <a class="return" href="/">
+    <a class="return" href="/visaSelection">
         Back
     </a>
 

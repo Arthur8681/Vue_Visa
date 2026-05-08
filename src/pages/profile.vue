@@ -11,9 +11,9 @@
             <label for="lname">Last Name:</label>
             <input type="text" id="lname" name="lname" placeholder="Your last name">
             <label for="Email">Email:</label>
-            <input type="text" id="Email" name="Email" placeholder="youremail@gmail.com">
+            <input type="email" id="Email" name="Email" placeholder="youremail@gmail.com">
             <label for="Phone">Phone:</label>
-            <input type="text" id="Phone" name="Phone" placeholder="+7932324903">
+            <input type="number" id="Phone" name="Phone" placeholder="+7932324903">
             <label for="country">Country:</label>
             <select id="country" name="country">
                 <option value="australia">Australia</option>
