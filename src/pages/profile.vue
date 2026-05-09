@@ -5,15 +5,15 @@
         <a class="underline-animation" href="">Profile</a>
     </header>
     <div class="responsive-form">
-        <form action="/action_page.php">
+        <form id="myForm" @submit.prevent="showAlert"">
             <label for="fname">First Name:</label>
-            <input type="text" id="fname" name="fname" placeholder="Your first name">
+            <input type="text" id="fname" name="fname" placeholder="Your first name" required>
             <label for="lname">Last Name:</label>
-            <input type="text" id="lname" name="lname" placeholder="Your last name">
-            <label for="Email">Email:</label>
+            <input type="text" id="lname" name="lname" placeholder="Your last name" required>
+            <label for="Email">Email (optional):</label>
             <input type="email" id="Email" name="Email" placeholder="youremail@gmail.com">
             <label for="Phone">Phone:</label>
-            <input type="number" id="Phone" name="Phone" placeholder="+7932324903">
+            <input type="tel" id="Phone" name="Phone" pattern="^\+?[1-9]\d{1,14}$" placeholder="+79323249023" required>
             <label for="country">Country:</label>
             <select id="country" name="country">
                 <option value="australia">Australia</option>
@@ -196,6 +196,23 @@ input[type=text], select {
   padding: 10px;
 }
 
+input[type=email], select {
+  min-width: 45%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+input[type=tel], select {
+  min-width: 45%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+
 
 input[type=submit] {
   width: 100%;
@@ -222,3 +239,16 @@ input[type=submit] {
 
 
 </style>
+
+
+<script>
+
+    export default {
+        methods: {
+            showAlert() {
+                alert("Form submitted!");
+            }
+        }
+    }
+
+</script>
